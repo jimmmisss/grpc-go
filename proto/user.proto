@@ -1,7 +1,7 @@
 syntax = "proto3";
-option go_package = "user";
+option go_package = "./;pb";
 
-service userService {
+service UserService {
   rpc GetUser(UserRequest) returns (UserResponse) {}
 }
 
@@ -13,7 +13,7 @@ message UserResponse {
   int64 id = 1;
   string name = 2;
   string username = 3;
-  string avatarUrl = 4;
+  string avatarurl = 4;
   string location = 5;
   Statistics statistics = 6;
   repeated string listURLs = 7;
