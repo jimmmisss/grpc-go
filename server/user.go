@@ -27,6 +27,7 @@ type User struct {
 	URL        string `json:"URL"`
 	StarredURL string `json:"starredURL"`
 	ReposURL   string `json:"reposURL"`
+	Nick       string `json:"nick"`
 }
 
 func (s *Server) GetUser(ctx context.Context, in *user.UserRequest) (*user.UserResponse, error) {
