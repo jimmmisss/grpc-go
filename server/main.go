@@ -19,6 +19,7 @@ func main() {
 	grpcServer := grpc.NewServer()
 
 	user.RegisterUserServiceServer(grpcServer, &server)
+	log.Println("Register user service server não quer funcionar.")
 
 	log.Println("Listening on Port: 8200!")
 
